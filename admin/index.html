@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Admin - Karya Mitra Digital Printing</title>
+  <link rel="icon" href="../assets/images/logo-karya-mitra-brand.png?v=24" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar__header">
+        <a href="#dashboard" class="sidebar__brand" style="text-decoration: none; display: block; overflow: visible; cursor: default;">
+          <span class="brand-lockup brand-lockup--site">
+            <span class="brand-lockup__badge">
+              <img class="brand-lockup__mark brand-lockup__mark--brand" src="../assets/images/logo-karya-mitra-brand.png?v=27" alt="" width="80" height="80">
+            </span>
+            <span class="brand-lockup__copy">
+              <strong>KARYA MITRA</strong>
+              <small>DIGITAL PRINTING</small>
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li>
+            <a href="#dashboard" class="sidebar__link active" data-target="dashboard-section">
+              <i class="fa-solid fa-chart-pie"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#produk" class="sidebar__link" data-target="products-section">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              <span>Produk</span>
+            </a>
+          </li>
+          <li>
+            <a href="#kategori" class="sidebar__link" data-target="categories-section">
+              <i class="fa-solid fa-tag"></i>
+              <span>Kategori</span>
+            </a>
+          </li>
+          <li>
+            <a href="#backup" class="sidebar__link" data-target="backup-section">
+              <i class="fa-solid fa-database"></i>
+              <span>Backup &amp; Restore</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <div class="sidebar__avatar" id="userAvatar">A</div>
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-name" id="userName">Administrator</div>
+            <div class="sidebar__user-role">Super Admin</div>
+          </div>
+          <div class="sidebar__logout" id="logoutBtn" title="Logout">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      <!-- Header -->
+      <header class="header">
+        <button class="header__toggle" id="sidebarToggle" aria-label="Toggle Sidebar">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <h1 class="header__title" id="pageTitle">Dashboard</h1>
+        
+        <div class="header__actions">
+          <button class="theme-toggle" id="themeToggle" title="Ganti Tema">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </div>
+      </header>
+
+      <!-- Content Area -->
+      <main class="content">
+        <!-- ALERT CONTAINER -->
+        <div id="globalAlert"></div>
+
+        <!-- 1. DASHBOARD SECTION -->
+        <section id="dashboard-section" class="content-section active">
+          <!-- Stats Grid -->
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-card__info">
+                <h3>Total Produk</h3>
+                <p id="statProductsCount">0</p>
+              </div>
+              <div class="stat-card__icon stat-card__icon--products">
+                <i class="fa-solid fa-box"></i>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-card__info">
+                <h3>Total Kategori</h3>
+                <p id="statCategoriesCount">0</p>
+              </div>
+              <div class="stat-card__icon stat-card__icon--categories">
+                <i class="fa-solid fa-tag"></i>
+              </div>
+            </div>
+            
+            <div class="stat-card">
+              <div class="stat-card__info">
+                <h3>Admin Terdaftar</h3>
+                <p id="statUsersCount">0</p>
+              </div>
+              <div class="stat-card__icon stat-card__icon--users">
+                <i class="fa-solid fa-user-shield"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Simplified Dashboard Grid (Full Width) -->
+          <div class="dashboard-simple-layout">
+            <div class="card">
+              <div class="card__header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                <h2 class="card__title">
+                  <i class="fa-solid fa-clock-rotate-left"></i>
+                  Produk Baru Diunggah
+                </h2>
+                <div class="card__header-actions" style="display: flex; gap: 8px;">
+                  <button class="btn btn--primary btn--sm" id="quickAddProduct">
+                    <i class="fa-solid fa-plus"></i> Unggah Produk Baru
+                  </button>
+                  <button class="btn btn--secondary btn--sm" id="quickAddCategory">
+                    <i class="fa-solid fa-tag"></i> Tambah Kategori
+                  </button>
+                </div>
+              </div>
+              <div class="card__body" style="padding: 0;">
+                <div class="table-responsive">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th style="width: 80px; text-align: center;">Foto</th>
+                        <th>Nama Produk</th>
+                        <th>Kategori</th>
+                        <th style="width: 250px;">Waktu Upload</th>
+                      </tr>
+                    </thead>
+                    <tbody id="recentProductsTable">
+                      <!-- Rendered by JS -->
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. PRODUCTS SECTION -->
+        <section id="products-section" class="content-section">
+          <div class="action-bar">
+            <div class="search-box">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="productSearch" placeholder="Cari nama produk...">
+            </div>
+            
+            <div class="filter-box">
+              <select id="productFilterCategory">
+                <option value="all">Semua Kategori</option>
+                <!-- Rendered by JS -->
+              </select>
+            </div>
+            
+            <button class="btn btn--primary" id="addProductBtn">
+              <i class="fa-solid fa-plus"></i> Tambah Produk
+            </button>
+          </div>
+
+          <div class="card">
+            <div class="card__body" style="padding: 0;">
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="width: 80px; text-align: center;">Foto</th>
+                      <th>Nama Produk</th>
+                      <th>Kategori</th>
+                      <th style="width: 250px;">Waktu Upload</th>
+                      <th style="width: 150px; text-align: right;">Aksi</th>
+                    </tr>
+                  </thead>
+                  <tbody id="productsTableBody">
+                    <!-- Rendered by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3. CATEGORIES SECTION -->
+        <section id="categories-section" class="content-section">
+          <div class="action-bar" style="justify-content: flex-end;">
+            <button class="btn btn--primary" id="addCategoryBtn">
+              <i class="fa-solid fa-plus"></i> Tambah Kategori
+            </button>
+          </div>
+
+          <div class="categories-grid" id="categoriesGrid">
+            <!-- Rendered by JS -->
+          </div>
+        </section>
+
+
+
+        <!-- 5. BACKUP & RESTORE SECTION -->
+        <section id="backup-section" class="content-section">
+          <!-- SQL Database Backup -->
+          <h2 style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; margin-bottom: 16px;">
+            <i class="fa-solid fa-database"></i> Cadangan &amp; Pemulihan Database (.SQL)
+          </h2>
+          <div class="alert alert--success" style="background-color: rgba(16, 185, 129, 0.1); color: var(--color-success); border-color: rgba(16, 185, 129, 0.2); margin-bottom: 16px;">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              Fitur ini mencadangkan database server secara real-time ke file format SQL (.sql). Pemulihan data memerlukan file kueri SQL yang valid (maksimal 5MB).
+            </div>
+          </div>
+
+          <div class="backup-grid">
+            <!-- SQL Export Card -->
+            <div class="backup-card card">
+              <i class="fa-solid fa-file-invoice-dollar" style="color: var(--color-success);"></i>
+              <h3>Ekspor Database (.SQL)</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Unduh struktur tabel database dan data lengkap sebagai file SQL cadangan.</p>
+              <a href="backup_db.php?action=export" class="btn btn--primary" style="margin-top: auto; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">
+                <i class="fa-solid fa-download"></i> Unduh File SQL
+              </a>
+            </div>
+
+            <!-- SQL Import Card -->
+            <div class="backup-card card">
+              <i class="fa-solid fa-file-import" style="color: var(--color-success);"></i>
+              <h3>Restore Database (.SQL)</h3>
+              <p style="font-size: 0.85rem; color: var(--text-secondary);">Unggah file cadangan SQL untuk memulihkan tabel ke database MySQL di server.</p>
+              
+              <form id="dbRestoreForm" enctype="multipart/form-data" style="width: 100%; display: flex; flex-direction: column; gap: 12px; margin-top: auto;">
+                <div class="file-upload" style="width: 100%; padding: 12px;">
+                  <input type="file" id="dbSqlFile" name="sql_file" accept=".sql" required>
+                  <i class="fa-solid fa-cloud-arrow-up" style="font-size: 1.5rem; color: var(--color-success);"></i>
+                  <span class="file-upload__text" id="dbSqlFileText" style="display: block; margin-top: 4px;">Pilih File SQL</span>
+                </div>
+                
+                <button type="submit" class="btn btn--success" style="width: 100%; justify-content: center; background-color: var(--color-success); color: #fff; border-color: var(--color-success);">
+                  <i class="fa-solid fa-upload"></i> Jalankan Pemulihan SQL
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal" id="productModal">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title" id="productModalTitle">Tambah Produk</h3>
+        <button class="modal__close" id="closeProductModal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="productForm">
+        <div class="modal__body">
+          <input type="hidden" id="prodId">
+          
+          <div class="form-group">
+            <label for="prodName">Nama Produk *</label>
+            <input type="text" id="prodName" class="form-control" placeholder="Contoh: Banner Spanduk Flexi" required>
+          </div>
+
+          <div class="form-group">
+            <label for="prodCategory">Kategori Produk *</label>
+            <select id="prodCategory" class="form-control" required>
+              <!-- Populated dynamically -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Foto Produk *</label>
+            <div class="file-upload">
+              <input type="file" id="prodImageFile" accept="image/*">
+              <i class="fa-solid fa-image file-upload__icon"></i>
+              <div class="file-upload__text" id="uploadText">Klik atau drag file gambar di sini</div>
+            </div>
+            <div class="image-preview" id="prodImagePreview">
+              <img src="" alt="Preview">
+            </div>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <button type="button" class="btn btn--secondary" id="cancelProductModal">Batal</button>
+          <button type="submit" class="btn btn--primary">Simpan Produk</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- CATEGORY MODAL -->
+  <div class="modal" id="categoryModal">
+    <div class="modal__content">
+      <div class="modal__header">
+        <h3 class="modal__title" id="categoryModalTitle">Tambah Kategori</h3>
+        <button class="modal__close" id="closeCategoryModal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="categoryForm">
+        <div class="modal__body">
+          <input type="hidden" id="catId">
+          <input type="hidden" id="catSlug">
+          <input type="hidden" id="catIcon" value="fa-solid fa-tag">
+          
+          <div class="form-group">
+            <label for="catName">Nama Kategori *</label>
+            <input type="text" id="catName" class="form-control" placeholder="Contoh: Stiker-Label" required>
+          </div>
+
+          <div class="form-group">
+            <label>Pilih Ikon Kategori *</label>
+            <div class="icon-picker" id="iconPicker">
+              <!-- Rendered dynamically by JS -->
+            </div>
+          </div>
+        </div>
+        <div class="modal__footer">
+          <button type="button" class="btn btn--secondary" id="cancelCategoryModal">Batal</button>
+          <button type="submit" class="btn btn--primary">Simpan Kategori</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FAQ modal removed -->
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

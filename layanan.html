@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Layanan Karya Mitra Percetakan Tegal — produk & jasa cetak berkualitas untuk bisnis, instansi, sekolah, dan kebutuhan personal.">
+  <title>Layanan | Karya Mitra Percetakan</title>
+  <link rel="icon" href="assets/images/logo-karya-mitra-brand.png?v=31" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=20260620logo14">
+  <style id="layanan-product-img-critical">
+    #layanan .product-card {
+      overflow: hidden !important;
+    }
+
+    #layanan .product-card__img-wrap {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      aspect-ratio: 1 / 1 !important;
+      height: auto !important;
+      padding: var(--product-img-pad, 10px) !important;
+      overflow: hidden !important;
+      flex: 0 0 auto !important;
+      flex-shrink: 0 !important;
+      box-sizing: border-box !important;
+      line-height: 0 !important;
+    }
+
+    #layanan .product-card__img-wrap img,
+    #layanan .product-card__photo {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      image-rendering: auto !important;
+      border-radius: var(--img-inner-radius, 12px) !important;
+    }
+  </style>
+</head>
+<body class="page-layanan">
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Karya Mitra Digital Printing">
+        <span class="brand-lockup brand-lockup--site">
+          <span class="brand-lockup__badge">
+            <img class="brand-lockup__mark brand-lockup__mark--brand" src="assets/images/logo-karya-mitra-brand.png?v=31" alt="" width="80" height="80">
+          </span>
+          <span class="brand-lockup__copy">
+            <strong data-sync="name">KARYA MITRA</strong>
+            <small data-sync="subtitle">DIGITAL PRINTING</small>
+          </span>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav__link">Beranda</a>
+        <a href="tentang.html" class="nav__link">Tentang</a>
+        <a href="layanan.html" class="nav__link nav__link--active" aria-current="page">Layanan</a>
+        <a href="keunggulan.html" class="nav__link">Keunggulan</a>
+        <a href="kontak.html" class="nav__link nav__link--cta">Hubungi Kami</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Services -->
+    <section class="section section--alt" id="layanan">
+      <div class="container">
+        <div class="section__header" id="layanan-start">
+          <span class="section__label">Layanan Kami</span>
+          <h2 class="section__title">Produk & Jasa Cetak</h2>
+          <p class="section__desc">Mitra cetak terbaik Anda — free design, premium quality, harga terjangkau.</p>
+        </div>
+
+        <div class="catalog__filter-bar" id="layanan-filters">
+          <div class="catalog__filters" role="tablist" aria-label="Filter kategori produk">
+            <button class="catalog__filter catalog__filter--active" data-filter="all" role="tab" aria-selected="true">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+              <span class="catalog__filter-label">Semua Produk</span>
+            </button>
+            <button class="catalog__filter" data-filter="kalender" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+              <span class="catalog__filter-label">Kalender</span>
+            </button>
+            <button class="catalog__filter" data-filter="spanduk-banner" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M12 18v3"/><path d="M8 21h8"/></svg></span>
+              <span class="catalog__filter-label">Spanduk-Banner</span>
+            </button>
+            <button class="catalog__filter" data-filter="display" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></span>
+              <span class="catalog__filter-label">Display</span>
+            </button>
+            <button class="catalog__filter" data-filter="kartu-undangan" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M12 12l-4-2v4l4-2 4 2v-4l-4 2z"/></svg></span>
+              <span class="catalog__filter-label">Kartu-Undangan</span>
+            </button>
+            <button class="catalog__filter" data-filter="stiker-label" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7.5" cy="7.5" r="1"/></svg></span>
+              <span class="catalog__filter-label">Stiker-Label</span>
+            </button>
+            <button class="catalog__filter" data-filter="materi-promosi" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M3 11v2a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4v-2"/><path d="M12 3v12"/><path d="M8 7l4-4 4 4"/></svg></span>
+              <span class="catalog__filter-label">Materi Promo</span>
+            </button>
+            <button class="catalog__filter" data-filter="buku-dokumen" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+              <span class="catalog__filter-label">Buku-Dokumen</span>
+            </button>
+            <button class="catalog__filter" data-filter="box" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></span>
+              <span class="catalog__filter-label">Box Makanan</span>
+            </button>
+            <button class="catalog__filter" data-filter="merchandise" role="tab" aria-selected="false">
+              <span class="catalog__filter-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>
+              <span class="catalog__filter-label">Merchandise</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="catalog__grid" id="catalogGrid">
+
+          <article class="product-card" data-category="kalender">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kalender-custom.png?v=img8" alt="Kalender Custom" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kalender</span>
+              <h3 class="product-card__title">Kalender Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kalender">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kalender-duduk.png?v=img8" alt="Kalender Duduk" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kalender</span>
+              <h3 class="product-card__title">Kalender Duduk</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/banner.png?v=img9" width="1024" height="1024" alt="Banner Digital Printing" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">Banner Digital Printing</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/rollup-banner.png?v=img9" width="1024" height="1024" alt="Roll Up Banner" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">Roll Up Banner</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/x-banner.png?v=img9" width="1024" height="1024" alt="X Banner" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">X Banner</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="display">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/akrilik-plakat.png?v=img10" width="1024" height="1024" alt="Plakat Akrilik" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Display</span>
+              <h3 class="product-card__title">Plakat Akrilik</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="display">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-branding.png?v=img10" width="1024" height="1024" alt="Branding Sticker Kaca" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Display</span>
+              <h3 class="product-card__title">Branding Sticker Kaca</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/undangan.png?v=img11" width="1024" height="1024" alt="Cetak Undangan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Cetak Undangan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-kartu.png?v=img11" width="1024" height="1024" alt="Kartu Nama" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Kartu Nama</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kartu-vaksin.png?v=img11" width="1024" height="1024" alt="Kartu Vaksin" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Kartu Vaksin</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-vinyl-cromo.png?v=img13" width="1024" height="1024" alt="Stiker Bahan Vinyl & Cromo" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Stiker</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-label-makanan.png?v=img12" width="1024" height="1024" alt="Stiker Label Makanan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Stiker Label Makanan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kertas-label-aksesoris.png?v=img12" width="1024" height="1024" alt="Kertas Label Aksesoris" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Kertas Label Aksesoris</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/etiket-shuttlecock.png?v=img7" width="1024" height="1024" alt="Cetak Etiket Shuttlecock" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Cetak Etiket Shuttlecock</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="materi-promosi">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/brosur.png?v=img7" width="1024" height="1024" alt="Brosur" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Materi Promosi</span>
+              <h3 class="product-card__title">Brosur</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="materi-promosi">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/hang-tag.png?v=img14" width="1024" height="1024" alt="Hang Tag" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Materi Promosi</span>
+              <h3 class="product-card__title">Hang Tag</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-buku.png?v=img15" width="1024" height="1024" alt="Cetak Buku" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Cetak Buku</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/buku-nota-ncr.png?v=img15" width="1024" height="1024" alt="Buku Nota NCR" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Buku Nota NCR</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/buku-yasin.png?v=img15" width="1024" height="1024" alt="Buku Yasin" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Buku Yasin</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/isi-raport.png?v=img15" width="1024" height="1024" alt="Isi Raport" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Isi Raport</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stopmap.png?v=img7" width="1024" height="1024" alt="Stopmap Custom" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Stopmap Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-makanan.png?v=img16" width="1024" height="1024" alt="Box Makanan Custom" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Makanan Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-catering.png?v=img16" width="1024" height="1024" alt="Box Catering" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Catering</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-martabak.png?v=img16" width="1024" height="1024" alt="Box Martabak" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Martabak</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-chicken.png?v=img16" width="1024" height="1024" alt="Box Chicken" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Chicken</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kantong-makanan.png?v=img16" width="1024" height="1024" alt="Kantong Makanan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Kantong Makanan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/paper-bag.png?v=img17" width="1024" height="1024" alt="Paper Bag" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Paper Bag</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stempel.png?v=img17" width="1024" height="1024" alt="Stempel" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Stempel</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-mug.png?v=img7" width="1024" height="1024" alt="Cetak Mug" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Cetak Mug</h3>
+        </div>
+
+        <p class="catalog__empty" id="catalogEmpty" hidden>Tidak ada produk di kategori ini.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--footer" aria-label="Karya Mitra Digital Printing">
+          <span class="brand-lockup brand-lockup--footer">
+            <span class="brand-lockup__badge">
+              <img class="brand-lockup__mark brand-lockup__mark--brand" src="assets/images/logo-karya-mitra-brand.png?v=31" alt="" width="80" height="80">
+            </span>
+            <span class="brand-lockup__copy">
+              <strong data-sync="name">KARYA MITRA</strong>
+              <small data-sync="subtitle">DIGITAL PRINTING</small>
+            </span>
+          </span>
+        </a>
+        <p class="footer__tagline" data-sync="tagline">18 tahun pengalaman — mitra cetak terpercaya di Tegal dan sekitarnya.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Beranda</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="layanan.html">Layanan</a>
+        <a href="keunggulan.html">Keunggulan</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <div class="footer__contact">
+        <strong>Kantor</strong>
+        <p data-sync="address">Ruko The Orchid I, Mejasem<br>Jl. Siklepuh Raya No.1A, Sibata<br>Mejasem Bar., Kec. Kramat<br>Kab. Tegal, Jateng 52181</p>
+        <p><a href="https://wa.me/6287800150583" target="_blank" rel="noopener noreferrer" data-sync="phone-link">0878-0015-0583</a></p>
+        <p><a href="https://www.facebook.com/percetakan.karyamitra.77" target="_blank" rel="noopener noreferrer" data-sync="fb-link">Facebook</a></p>
+        <p><a href="https://www.instagram.com/karyamitra.percetakan?igsh=OWNoc2Iwa2Z4bnEw" target="_blank" rel="noopener noreferrer" data-sync="ig-link">@karyamitra.percetakan</a></p>
+        <p><a href="https://www.tiktok.com/@karyamitra.percetakan?_r=1&amp;_t=ZS-96fdcLGS2Mu" target="_blank" rel="noopener noreferrer" data-sync="tt-link">TikTok</a></p>
+        <p><a href="https://www.youtube.com/@percetakankaryamitra2732" target="_blank" rel="noopener noreferrer" data-sync="yt-link">YouTube</a></p>
+      </div>
+      <p class="footer__copy">&copy; 2026 Karya Mitra Percetakan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <style id="layanan-img-fix-final">
+    #layanan .product-card__img-wrap {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      aspect-ratio: 1 / 1 !important;
+      height: auto !important;
+      overflow: hidden !important;
+      flex: 0 0 auto !important;
+      flex-shrink: 0 !important;
+    }
+
+    #layanan .product-card__img-wrap > img,
+    #layanan img.product-card__photo {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      image-rendering: auto !important;
+    }
+  </style>
+  <script src="js/main.js?v=20260618v"></script>
+  <script src="js/admin-sync.js"></script>
+</body>
+</html>

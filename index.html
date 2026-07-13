@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html 
+lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="Karya Mitra Digital Printing Tegal — percetakan premium untuk UMKM, sekolah, instansi, dan kebutuhan personal.">
+  <title>Karya Mitra | Digital Printing Premium Tegal</title>
+  <link rel="icon" href="assets/images/logo-karya-mitra-brand.png?v=24" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css?v=20260620logo8">
+  <style id="navbar-mobile-critical">
+    @media (max-width: 767px) {
+      .page-home .navbar__toggle {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative;
+        z-index: 1002;
+        flex: 0 0 auto;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        margin-left: auto;
+        border-radius: 8px;
+        background: rgba(0, 86, 204, 0.08) !important;
+        border: 1px solid rgba(0, 86, 204, 0.14) !important;
+        box-shadow: none !important;
+      }
+
+      .page-home .navbar__toggle.is-active {
+        background: var(--color-primary) !important;
+        border-color: var(--color-primary) !important;
+      }
+
+      .page-home .navbar__menu {
+        position: fixed !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: auto !important;
+        width: min(288px, 84vw) !important;
+        height: 100dvh !important;
+        min-height: 100dvh !important;
+        flex: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        gap: 0 !important;
+        padding:
+          calc(var(--navbar-height) + env(safe-area-inset-top, 0px))
+          0
+          calc(20px + env(safe-area-inset-bottom, 0px)) !important;
+        margin: 0 !important;
+        background: #fff !important;
+        border: none !important;
+        border-left: 1px solid #e2e8f0 !important;
+        border-radius: 0 !important;
+        box-shadow: -12px 0 40px rgba(15, 23, 42, 0.1) !important;
+        transform: translateX(100%) !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: none !important;
+        overflow: hidden !important;
+        transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1) !important;
+      }
+
+      .page-home .navbar__menu.is-open {
+        transform: translateX(0) !important;
+        pointer-events: auto !important;
+      }
+
+      .page-home .navbar__catalog--mobile,
+      .page-home .navbar__cta--mobile {
+        display: inline-flex !important;
+      }
+    }
+  </style>
+  <style id="faq-layout-critical">
+    /* FAQ layout — scroll, sticky, ukuran padat (visual di style.css) */
+    #faq.faq-zone {
+      position: relative;
+      z-index: 10;
+      overflow: visible !important;
+      scroll-margin-top: calc(var(--navbar-height, 76px) + 8px);
+      padding-top: 0 !important;
+      padding-bottom: calc(120px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+
+    #faq .container,
+    .faq-split,
+    .faq-split__col,
+    .faq-zone__list,
+    .faq-zone__item,
+    .faq-zone__item[open],
+    .faq-zone__a,
+    .faq-wa__form {
+      overflow: visible !important;
+      max-height: none !important;
+    }
+
+    .faq-zone__item[open] {
+      position: relative;
+      z-index: 6;
+    }
+
+    #faq .faq-zone__header.section__header {
+      margin-bottom: 14px;
+      scroll-margin-top: calc(var(--navbar-height, 76px) + 12px);
+    }
+
+    .faq-split {
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+      width: 100%;
+    }
+
+    .faq-split__col {
+      flex: 1 1 auto;
+      min-width: 0;
+      overflow: visible !important;
+    }
+
+    @media (max-width: 767px) {
+      #faq.faq-zone {
+        padding-top: calc(var(--navbar-height, 68px) + var(--space-sm, 12px)) !important;
+        padding-bottom:
+          calc(var(--space-2xl, 48px) + 72px + env(safe-area-inset-bottom, 0px)) !important;
+      }
+
+      #faq .faq-split__col--wa {
+        margin-top: var(--space-md);
+      }
+    }
+
+    @media (min-width: 768px) {
+      #faq.faq-zone {
+        padding-top: calc(var(--navbar-height, 76px) + var(--space-sm, 12px)) !important;
+        padding-bottom: var(--space-2xl, 48px) !important;
+      }
+
+      #faq .faq-zone__header.section__header {
+        margin-top: 0 !important;
+        margin-bottom: 10px !important;
+      }
+
+      #faq .faq-zone__header .section__label {
+        margin-bottom: 4px !important;
+      }
+
+      .faq-split {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 28px;
+      }
+
+      .faq-split__col {
+        flex: 1 1 0;
+      }
+
+      #faq .faq-zone__col-head {
+        margin-bottom: 10px;
+        padding-bottom: 0;
+      }
+
+      #faq .faq-wa__form {
+        gap: 10px;
+      }
+
+      #faq .faq-wa__field {
+        gap: 5px;
+      }
+
+      #faq .faq-wa__field input,
+      #faq .faq-wa__field textarea {
+        padding: 10px 12px;
+        font-size: 15px;
+      }
+
+      #faq .faq-wa__field textarea {
+        min-height: 68px;
+      }
+
+      #faq .faq-wa__btn {
+        padding: 12px 16px;
+        font-size: 15px;
+        margin-top: 2px;
+      }
+
+      #faq .faq-split__col--wa {
+        position: sticky;
+        top: calc(var(--navbar-height, 76px) + 12px);
+        align-self: flex-start;
+      }
+    }
+
+    @media (min-width: 992px) {
+      #faq.faq-zone {
+        padding:
+          0
+          0
+          var(--space-2xl, 48px) !important;
+      }
+
+      #faq .faq-zone__header.section__header {
+        margin-top: 0;
+        margin-bottom: var(--space-sm, 12px);
+      }
+
+      #faq .faq-zone__header .section__label {
+        margin-bottom: 6px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-height: 860px) {
+      #faq .faq-zone__col-lead {
+        display: none;
+      }
+
+      #faq .faq-wa__field textarea {
+        min-height: 56px;
+      }
+    }
+  </style>
+  <style id="layanan-product-img-critical">
+    #layanan .product-card {
+      overflow: hidden !important;
+    }
+
+    #layanan .product-card__img-wrap {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      aspect-ratio: 1 / 1 !important;
+      height: auto !important;
+      padding: var(--product-img-pad, 10px) !important;
+      overflow: hidden !important;
+      flex: 0 0 auto !important;
+      flex-shrink: 0 !important;
+      box-sizing: border-box !important;
+      line-height: 0 !important;
+    }
+
+    #layanan .product-card__img-wrap img,
+    #layanan .product-card__photo {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      image-rendering: auto !important;
+      border-radius: var(--img-inner-radius, 12px) !important;
+    }
+  </style>
+</head>
+<body class="page-home" data-order-url="http://Percetakan.test/index.php" data-order-lan-port="8081">
+
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__brand" aria-label="Karya Mitra Digital Printing">
+        <span class="brand-lockup brand-lockup--site">
+          <span class="brand-lockup__badge">
+            <img class="brand-lockup__mark brand-lockup__mark--brand" src="assets/images/logo-karya-mitra-brand.png?v=27" alt="" width="80" height="80">
+          </span>
+          <span class="brand-lockup__copy">
+            <strong data-sync="name">KARYA MITRA</strong>
+            <small data-sync="subtitle">DIGITAL PRINTING</small>
+          </span>
+        </span>
+      </a>
+
+      <nav class="navbar__menu" id="navbarMenu" aria-label="Navigasi utama">
+        <div class="navbar__menu-head">
+          <span class="navbar__menu-title">Menu</span>
+        </div>
+        <ul class="navbar__links">
+          <li><a href="#home" class="navbar__link navbar__link--active" aria-current="page"><i class="fa-solid fa-house navbar__link-icon" aria-hidden="true"></i><span>Beranda</span></a></li>
+          <li><a href="#tentang" class="navbar__link"><i class="fa-solid fa-building navbar__link-icon" aria-hidden="true"></i><span>Tentang Kami</span></a></li>
+          <li><a href="#layanan" class="navbar__link"><i class="fa-solid fa-layer-group navbar__link-icon" aria-hidden="true"></i><span>Layanan</span></a></li>
+          <li><a href="#faq" class="navbar__link"><i class="fa-solid fa-circle-question navbar__link-icon" aria-hidden="true"></i><span>FAQ</span></a></li>
+          <li><a href="#kontak" class="navbar__link"><i class="fa-solid fa-phone navbar__link-icon" aria-hidden="true"></i><span>Kontak</span></a></li>
+        </ul>
+        <div class="navbar__menu-foot">
+          <a href="https://katalog.inaproc.id/karya-mitra" class="navbar__catalog navbar__catalog--mobile" target="_blank" rel="noopener noreferrer" data-sync="inaproc-link">
+            <i class="fa-solid fa-store" aria-hidden="true"></i>
+            Katalog InaProc
+          </a>
+          <a href="http://Percetakan.test/index.php" class="navbar__cta navbar__cta--mobile navbar__cta--order" target="_blank" rel="noopener noreferrer" data-sync="order-link">
+            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+            Pesan Sekarang
+          </a>
+        </div>
+      </nav>
+      <div class="navbar__actions navbar__actions--desktop">
+        <a href="https://katalog.inaproc.id/karya-mitra" class="navbar__catalog navbar__catalog--desktop" target="_blank" rel="noopener noreferrer" data-sync="inaproc-link">
+          <i class="fa-solid fa-store" aria-hidden="true"></i>
+          <span>Katalog InaProc</span>
+        </a>
+        <a href="http://Percetakan.test/index.php" class="navbar__cta navbar__cta--desktop navbar__cta--order" target="_blank" rel="noopener noreferrer" data-sync="order-link">
+          <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+          <span>Pesan Sekarang</span>
+        </a>
+      </div>
+
+      <button class="navbar__toggle" id="navbarToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navbarMenu">
+        <span class="navbar__toggle-icon" aria-hidden="true">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </span>
+      </button>
+    </div>
+    <div class="navbar__backdrop" id="navbarBackdrop" aria-hidden="true"></div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="hero__glow hero__glow--1"></span>
+        <span class="hero__glow hero__glow--2"></span>
+      </div>
+      <div class="container hero__wrapper">
+        <div class="hero__content reveal">
+          <span class="hero__eyebrow hero__eyebrow--hero">
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            Percetakan Digital Premium · Tegal
+          </span>
+          <h1 class="hero__heading" id="hero-title">
+            <span class="hero__heading-full" data-sync="hero-title">
+              <span class="hero__heading-line">Solusi Cetak</span>
+              <span class="hero__heading-line"><span class="hero__accent">Berkualitas</span> untuk Bisnis Anda</span>
+            </span>
+            <span class="hero__heading-short">Cetak Premium Tegal</span>
+          </h1>
+          <p class="hero__description" data-sync="hero-desc">
+            Dari spanduk, stiker, kemasan, hingga kebutuhan cetak personal — kualitas premium, harga transparan, dan pengerjaan tepat waktu di Mejasem, Tegal.
+          </p>
+          <div class="hero__actions">
+            <a href="#layanan" class="btn btn--primary">Lihat Layanan</a>
+            <a href="#kontak" class="btn btn--outline">
+              Hubungi Kami
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+          <ul class="hero__stats" aria-label="Statistik Karya Mitra">
+            <li><strong>18+</strong><span>Tahun Pengalaman</span></li>
+            <li><strong>15K+</strong><span>Klien Puas</span></li>
+            <li><strong>Free</strong><span>Konsultasi Desain</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal reveal--delay">
+          <div class="hero__frame">
+            <div class="hero__frame-inner">
+              <img
+                src="assets/images/box-martabak-hero.png"
+                alt="Box martabak custom cetak Karya Mitra"
+                class="hero__frame-img"
+                width="1024"
+                height="1024"
+                loading="eager"
+                decoding="async"
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TENTANG KAMI
+         ============================================================ -->
+    <section class="section section--alt about-v2" id="tentang" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-v2__grid">
+
+          <div class="about-v2__visual reveal">
+            <div class="hero__frame about-v2__media">
+              <div class="hero__frame-inner">
+                <img
+                  class="hero__frame-img"
+                  src="assets/images/about-paper-bag.png"
+                  alt="Cetak paper bag custom Karya Mitra — tas kertas coklat Samson dengan desain gratis"
+                  width="768"
+                  height="768"
+                  loading="eager"
+                  decoding="async"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="about-v2__content reveal reveal--delay">
+            <span class="section__label">TENTANG KAMI</span>
+            <h2 class="about-v2__title" id="about-title">Mitra Cetak Terpercaya untuk Bisnis Anda</h2>
+            <div class="about-v2__copy">
+              <p class="about-v2__lead" data-sync="about-lead">
+                Di Mejasem, Tegal, Karya Mitra hadir sebagai mitra cetak — mengutamakan kualitas, ketepatan waktu, dan harga transparan untuk UMKM hingga instansi.
+              </p>
+              <p class="about-v2__text" data-sync="about-text">
+                Didukung fasilitas produksi lengkap dan mesin banner digital, kami melayani paper bag, spanduk, stiker, kemasan, hingga cetak personal — dari desain gratis hingga siap pakai.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="layanan" aria-labelledby="layanan-title">
+      <div class="container">
+        <div class="catalog__sticky-top">
+        <div class="catalog__head">
+          <header class="section__header reveal" id="layanan-start">
+            <span class="section__label">Layanan Kami</span>
+            <h2 class="section__title" id="layanan-title">Produk &amp; Jasa Cetak</h2>
+            <p class="section__desc">Mitra cetak terbaik Anda — kualitas premium, harga terjangkau, pengerjaan cepat.</p>
+          </header>
+        </div>
+        <div class="catalog__filter-bar reveal reveal--delay">
+          <p class="catalog__filter-heading" id="layanan-filter-label">Pilih Kategori</p>
+          <div class="catalog__filters catalog__filters--mobile" role="tablist" aria-labelledby="layanan-filter-label" aria-label="Filter kategori layanan">
+              <button class="catalog__filter catalog__filter--active" type="button" data-filter="all" role="tab" aria-selected="true">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-border-all" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Semua</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="kalender" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Kalender</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="spanduk-banner" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-panorama" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Spanduk-Banner</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="display" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-display" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Display</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="kartu-undangan" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Kartu-Undangan</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="stiker-label" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-tags" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Stiker-Label</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="materi-promosi" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Materi Promo</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="buku-dokumen" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-book" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Buku-Dokumen</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="box" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-box" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Box Makanan</span>
+              </button>
+              <button class="catalog__filter" type="button" data-filter="merchandise" role="tab" aria-selected="false">
+                <span class="catalog__filter-icon"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i></span>
+                <span class="catalog__filter-label">Merchandise</span>
+              </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="catalog__track" id="catalogTrack">
+<div class="catalog__grid reveal" id="catalogGrid">
+
+          <article class="product-card" data-category="kalender">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kalender-custom.png?v=img8" alt="Kalender Custom" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kalender</span>
+              <h3 class="product-card__title">Kalender Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kalender">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kalender-duduk.png?v=img8" alt="Kalender Duduk" width="1024" height="1024" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kalender</span>
+              <h3 class="product-card__title">Kalender Duduk</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/banner.png?v=img9" width="1024" height="1024" alt="Banner Digital Printing" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">Banner Digital Printing</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/rollup-banner.png?v=img9" width="1024" height="1024" alt="Roll Up Banner" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">Roll Up Banner</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="spanduk-banner">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/x-banner.png?v=img9" width="1024" height="1024" alt="X Banner" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Spanduk-Banner</span>
+              <h3 class="product-card__title">X Banner</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="display">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/akrilik-plakat.png?v=img10" width="1024" height="1024" alt="Plakat Akrilik" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Display</span>
+              <h3 class="product-card__title">Plakat Akrilik</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="display">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-kaca.png?v=img10" width="1024" height="1024" alt="Branding Sticker Kaca" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Display</span>
+              <h3 class="product-card__title">Branding Sticker Kaca</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/undangan.png?v=img11" width="1024" height="1024" alt="Cetak Undangan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Cetak Undangan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-kartu.png?v=img11" width="1024" height="1024" alt="Kartu Nama" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Kartu Nama</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="kartu-undangan">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kartu-vaksin.png?v=img11" width="1024" height="1024" alt="Kartu Vaksin" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Kartu & Undangan</span>
+              <h3 class="product-card__title">Kartu Vaksin</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-vinyl-cromo.png?v=img13" width="1024" height="1024" alt="Stiker Bahan Vinyl & Cromo" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Stiker</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stiker-label-makanan.png?v=img12" width="1024" height="1024" alt="Stiker Label Makanan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Stiker Label Makanan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kertas-label-aksesoris.png?v=img12" width="1024" height="1024" alt="Kertas Label Aksesoris" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Kertas Label Aksesoris</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="stiker-label">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/etiket-shuttlecock.png?v=img7" width="1024" height="1024" alt="Cetak Etiket Shuttlecock" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Stiker & Label</span>
+              <h3 class="product-card__title">Cetak Etiket Shuttlecock</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="materi-promosi">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/brosur.png?v=img7" width="1024" height="1024" alt="Brosur" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Materi Promosi</span>
+              <h3 class="product-card__title">Brosur</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="materi-promosi">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/hang-tag.png?v=img14" width="1024" height="1024" alt="Hang Tag" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Materi Promosi</span>
+              <h3 class="product-card__title">Hang Tag</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-buku.png?v=img15" width="1024" height="1024" alt="Cetak Buku" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Cetak Buku</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/buku-nota-ncr.png?v=img15" width="1024" height="1024" alt="Buku Nota NCR" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Buku Nota NCR</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/buku-yasin.png?v=img15" width="1024" height="1024" alt="Buku Yasin" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Buku Yasin</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/isi-raport.png?v=img15" width="1024" height="1024" alt="Isi Raport" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Isi Raport</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="buku-dokumen">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stopmap.png?v=img7" width="1024" height="1024" alt="Stopmap Custom" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Buku & Dokumen</span>
+              <h3 class="product-card__title">Stopmap Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-makanan.png?v=img16" width="1024" height="1024" alt="Box Makanan Custom" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Makanan Custom</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-catering.png?v=img16" width="1024" height="1024" alt="Box Catering" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Catering</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-martabak-hero.png?v=img16" width="1024" height="1024" alt="Box Martabak" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Martabak</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/box-chicken.png?v=img16" width="1024" height="1024" alt="Box Chicken" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Box Chicken</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="box">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/kantong-makanan.png?v=img16" width="1024" height="1024" alt="Kantong Makanan" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Box Makanan</span>
+              <h3 class="product-card__title">Kantong Makanan</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/paper-bag.png?v=img17" width="1024" height="1024" alt="Paper Bag" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Paper Bag</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/stempel-flash.png?v=img17" width="1024" height="1024" alt="Stempel" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Stempel</h3>
+            </div>
+          </article>
+
+          <article class="product-card" data-category="merchandise">
+            <div class="product-card__img-wrap">
+                <img class="product-card__photo" src="assets/images/cetak-mug.png?v=img7" width="1024" height="1024" alt="Cetak Mug" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <span class="product-card__cat">Merchandise</span>
+              <h3 class="product-card__title">Cetak Mug</h3>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="catalog__empty" id="catalogEmpty" hidden>Tidak ada produk di kategori ini.</p>
+          <div class="catalog__grouped" id="catalogGrouped" hidden></div>
+        </div>
+
+        <p class="catalog__empty" id="catalogEmpty" hidden>Tidak ada layanan di kategori ini.</p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="section section--alt faq-zone" id="faq" aria-labelledby="faq-title">
+      <div class="container faq-zone__inner">
+        <header class="section__header faq-zone__header">
+          <span class="section__label">FAQ</span>
+          <h2 class="section__title" id="faq-title">Pertanyaan yang Sering Diajukan</h2>
+          <p class="section__desc faq-zone__desc">Info singkat seputar order, file cetak, desain, dan pembayaran.</p>
+        </header>
+
+        <div class="faq-split" id="faq-split">
+          <div class="faq-split__col faq-split__col--faq">
+            <header class="faq-zone__col-head">
+              <span class="faq-zone__col-icon faq-zone__col-icon--blue" aria-hidden="true">
+                <i class="fa-solid fa-circle-question"></i>
+              </span>
+              <div>
+                <h3 class="faq-zone__col-title">Jawaban Umum</h3>
+                <p class="faq-zone__col-lead">Klik pertanyaan untuk membuka jawaban</p>
+              </div>
+            </header>
+            <div class="faq-zone__list" aria-label="Pertanyaan umum" data-sync="faq-container">
+              <details class="faq-zone__item">
+                <summary class="faq-zone__q">
+                  <span class="faq-zone__num" aria-hidden="true">01</span>
+                  <span class="faq-zone__q-text">Apakah ada minimal order untuk pemesanan cetak?</span>
+                  <span class="faq-zone__chev" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="faq-zone__a">
+                  <p>Minimal order tergantung jenis produk. Untuk banner, stiker, dan cetak digital lainnya, pesanan satuan dapat kami proses. Silakan hubungi kami terlebih dahulu untuk konfirmasi.</p>
+                </div>
+              </details>
+              <details class="faq-zone__item">
+                <summary class="faq-zone__q">
+                  <span class="faq-zone__num" aria-hidden="true">02</span>
+                  <span class="faq-zone__q-text">Berapa lama durasi pengerjaan pesanan?</span>
+                  <span class="faq-zone__chev" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="faq-zone__a">
+                  <p>Cetak digital biasanya selesai dalam 1–3 hari kerja. Pesanan offset atau jumlah besar membutuhkan sekitar 3–7 hari kerja. Estimasi waktu akan kami sampaikan sebelum produksi dimulai.</p>
+                </div>
+              </details>
+              <details class="faq-zone__item">
+                <summary class="faq-zone__q">
+                  <span class="faq-zone__num" aria-hidden="true">03</span>
+                  <span class="faq-zone__q-text">Apa syarat file untuk cetak?</span>
+                  <span class="faq-zone__chev" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="faq-zone__a">
+                  <p>File wajib siap cetak dan dikirim saat pemesanan melalui email. Format yang diterima: TIFF, JPEG, atau file yang sudah dikonversi sesuai ketentuan.</p>
+                  <p>Apabila file tidak memenuhi syarat tersebut, kami tidak bertanggung jawab atas kesalahan hasil cetak.</p>
+                </div>
+              </details>
+              <details class="faq-zone__item">
+                <summary class="faq-zone__q">
+                  <span class="faq-zone__num" aria-hidden="true">04</span>
+                  <span class="faq-zone__q-text">Apakah tersedia jasa desain?</span>
+                  <span class="faq-zone__chev" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="faq-zone__a">
+                  <p>Kami menyediakan jasa desain di meja desain. Biaya dihitung berdasarkan lama waktu penggunaan. Siapkan brief, referensi, dan detail pesanan agar proses lebih efisien.</p>
+                </div>
+              </details>
+              <details class="faq-zone__item">
+                <summary class="faq-zone__q">
+                  <span class="faq-zone__num" aria-hidden="true">05</span>
+                  <span class="faq-zone__q-text">Bagaimana cara memesan dan pembayaran?</span>
+                  <span class="faq-zone__chev" aria-hidden="true"><i class="fa-solid fa-chevron-down"></i></span>
+                </summary>
+                <div class="faq-zone__a">
+                  <p>Klik <strong>Pesan Sekarang</strong>, pilih produk, lalu unggah file siap cetak — tim kami konfirmasi harga sebelum produksi. Bisa juga via WhatsApp, email, atau datang ke workshop.</p>
+                  <p>Bayar <strong>QRIS</strong>, transfer bank, atau tunai. Kode QRIS dikirim setelah konfirmasi. Bisa DP; pelunasan saat barang siap.</p>
+                </div>
+              </details>
+            </div>
+          </div>
+
+          <div class="faq-split__col faq-split__col--wa faq-wa" id="faq-wa">
+            <header class="faq-zone__col-head">
+              <span class="faq-zone__col-icon faq-zone__col-icon--green" aria-hidden="true">
+                <i class="fa-brands fa-whatsapp"></i>
+              </span>
+              <div class="faq-wa__intro">
+                <h3 class="faq-zone__col-title">Tanya via WhatsApp</h3>
+                <p class="faq-zone__col-lead">Isi formulir — pesan terbuka di WhatsApp siap dikirim</p>
+              </div>
+            </header>
+            <form class="faq-wa__form" id="faqAskForm" novalidate>
+              <div class="faq-wa__field">
+                <label for="faq-name">Nama Lengkap</label>
+                <input type="text" id="faq-name" name="name" placeholder="Masukkan nama lengkap Anda" autocomplete="name" required>
+              </div>
+              <div class="faq-wa__field">
+                <label for="faq-phone">No. WhatsApp</label>
+                <input type="tel" id="faq-phone" name="phone" placeholder="08xx xxxx xxxx" autocomplete="tel" inputmode="tel" required>
+              </div>
+              <div class="faq-wa__field">
+                <label for="faq-question">Pertanyaan Anda</label>
+                <textarea id="faq-question" name="question" rows="3" placeholder="Tulis pertanyaan sepuasnya — minimal order, harga, desain, estimasi waktu, dll." required></textarea>
+              </div>
+              <button class="faq-wa__btn btn btn--primary" type="submit">
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                Kirim via WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt contact-zone" id="kontak" aria-labelledby="kontak-title">
+      <div class="container contact-zone__inner">
+        <header class="section__header contact-zone__header reveal">
+          <span class="section__label">Kontak</span>
+          <h2 class="section__title" id="kontak-title">Hubungi Kami</h2>
+          <p class="section__desc contact-zone__desc">Siap membantu kebutuhan cetak Anda. Hubungi kami untuk konsultasi dan penawaran harga.</p>
+        </header>
+
+        <div class="contact-split">
+          <div class="contact-split__main reveal">
+            <div class="contact-split__info">
+            <ul class="contact-list">
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-facebook"></i></span>
+                <div class="contact-list__body">
+                  <span class="contact-list__label">Facebook</span>
+                  <p><a href="https://www.facebook.com/percetakan.karyamitra.77" target="_blank" rel="noopener noreferrer" data-sync="fb-link">percetakan.karyamitra.77</a></p>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-instagram"></i></span>
+                <div class="contact-list__body">
+                  <span class="contact-list__label">Instagram</span>
+                  <p><a href="https://www.instagram.com/karyamitra.percetakan?igsh=OWNoc2Iwa2Z4bnEw" target="_blank" rel="noopener noreferrer" data-sync="ig-link">@karyamitra.percetakan</a></p>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-tiktok"></i></span>
+                <div class="contact-list__body">
+                  <span class="contact-list__label">TikTok</span>
+                  <p><a href="https://www.tiktok.com/@karyamitra.percetakan?_r=1&amp;_t=ZS-96fdcLGS2Mu" target="_blank" rel="noopener noreferrer" data-sync="tt-link">@karyamitra.percetakan</a></p>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true"><i class="fa-brands fa-youtube"></i></span>
+                <div class="contact-list__body">
+                  <span class="contact-list__label">YouTube</span>
+                  <p><a href="https://www.youtube.com/@percetakankaryamitra2732" target="_blank" rel="noopener noreferrer" data-sync="yt-link">@percetakankaryamitra2732</a></p>
+                </div>
+              </li>
+              <li class="contact-list__item">
+                <span class="contact-list__icon" aria-hidden="true"><i class="fa-regular fa-clock"></i></span>
+                <div class="contact-list__body">
+                  <span class="contact-list__label">Jam Operasional</span>
+                  <p data-sync="hours">Senin – Sabtu, 08.00 – 17.00 WIB</p>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <div class="contact-split__map" data-map-root role="button" tabindex="0" aria-label="Ketuk peta untuk lihat lokasi kantor" aria-expanded="false" aria-controls="contactMapPopup">
+              <div class="contact-map__frame">
+                <iframe
+                  class="contact-split__iframe"
+                  title="Lokasi kantor Karya Mitra Percetakan — Ruko The Orchid I, Jl. Siklepuh Raya No.1A, Mejasem, Tegal"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4858.7633867477!2d109.125728!3d-6.875627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTInMzIuMyJTIDEwOcKwMDcnMzIuNiJF!5e0!3m2!1sid!2sid!4v1738800000000!5m2!1sid!2sid"
+                  width="600"
+                  height="400"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  tabindex="-1"
+                  aria-hidden="true"
+                  data-sync="map-embed"></iframe>
+                <p class="contact-map__caption">
+                  <i class="fa-solid fa-building" aria-hidden="true"></i>
+                  <span>Kantor Kami · Mejasem, Tegal</span>
+                </p>
+                <div class="contact-map-popup" id="contactMapPopup" hidden>
+                  <p class="contact-map-popup__addr" data-sync="address">Ruko The Orchid I, Mejasem, Jl. Siklepuh Raya No.1A, Sibata, Mejasem Bar., Kec. Kramat, Kabupaten Tegal, Jawa Tengah 52181</p>
+                  <a class="contact-map-popup__dir contact-map-route" href="https://www.google.com/maps/dir/?api=1&amp;destination=Ruko+The+Orchid+I,+Mejasem,+Jl.+Siklepuh+Raya+No.1A,+Sibata,+Mejasem+Bar.,+Kec.+Kramat,+Kabupaten+Tegal,+Jawa+Tengah+52181" target="_blank" rel="noopener noreferrer" data-sync="map-link">
+                    <i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i>
+                    Petunjuk Arah
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo" aria-label="Karya Mitra Digital Printing">
+            <span class="brand-lockup brand-lockup--footer">
+              <span class="brand-lockup__badge">
+                <img class="brand-lockup__mark brand-lockup__mark--brand" src="assets/images/logo-karya-mitra-brand.png?v=27" alt="" width="80" height="80">
+              </span>
+              <span class="brand-lockup__copy">
+                <strong data-sync="name">KARYA MITRA</strong>
+                <small data-sync="subtitle">DIGITAL PRINTING</small>
+              </span>
+            </span>
+          </a>
+          <p class="footer__tagline" data-sync="tagline">18 tahun pengalaman — mitra cetak terpercaya di Tegal dan sekitarnya.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Navigasi</p>
+          <nav class="footer__links" aria-label="Footer navigasi">
+            <a href="#home">Beranda</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#layanan">Layanan</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontak">Kontak</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading">Kontak</p>
+          <ul class="footer__contact-list">
+            <li data-sync="address"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Ruko The Orchid I, Mejasem, Tegal 52181</span></li>
+            <li><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><a href="https://wa.me/6287800150583" target="_blank" rel="noopener noreferrer" data-sync="phone-link">0878-0015-0583</a></li>
+            <li><i class="fa-brands fa-facebook" aria-hidden="true"></i><a href="https://www.facebook.com/percetakan.karyamitra.77" target="_blank" rel="noopener noreferrer" data-sync="fb-link">Facebook</a></li>
+            <li><i class="fa-brands fa-instagram" aria-hidden="true"></i><a href="https://www.instagram.com/karyamitra.percetakan?igsh=OWNoc2Iwa2Z4bnEw" target="_blank" rel="noopener noreferrer" data-sync="ig-link">@karyamitra.percetakan</a></li>
+            <li><i class="fa-brands fa-tiktok" aria-hidden="true"></i><a href="https://www.tiktok.com/@karyamitra.percetakan?_r=1&amp;_t=ZS-96fdcLGS2Mu" target="_blank" rel="noopener noreferrer" data-sync="tt-link">TikTok</a></li>
+            <li><i class="fa-brands fa-youtube" aria-hidden="true"></i><a href="https://www.youtube.com/@percetakankaryamitra2732" target="_blank" rel="noopener noreferrer" data-sync="yt-link">YouTube</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Karya Mitra Digital Printing. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <style id="layanan-img-fix-final">
+    #layanan .product-card__img-wrap {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      aspect-ratio: 1 / 1 !important;
+      height: auto !important;
+      padding: var(--product-img-pad, 10px) !important;
+      overflow: hidden !important;
+      flex: 0 0 auto !important;
+      flex-shrink: 0 !important;
+    }
+
+    #layanan .product-card__img-wrap > img,
+    #layanan img.product-card__photo {
+      display: block !important;
+      width: 100% !important;
+      height: auto !important;
+      max-width: 100% !important;
+      max-height: 100% !important;
+      object-fit: contain !important;
+      object-position: center center !important;
+      image-rendering: auto !important;
+    }
+  </style>
+  <script src="js/script.js?v=20260618nav4"></script>
+  <script src="js/admin-sync.js"></script>
+</body>
+</html>

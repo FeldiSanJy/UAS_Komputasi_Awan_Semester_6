@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120" role="img" aria-label="Karya Mitra  Mitra Cetak Terbaik Anda">
+  <g transform="translate(76 4) scale(1.15)">
+    <path fill="#3AAA35" d="M8 6h11l-2 36H6L8 6z"/>
+    <path fill="#0056cc" d="M19 6h20L27 24 39 42H19l8-18L19 6z"/>
+  </g>
+  <text x="100" y="72" text-anchor="middle" font-family="'Outfit', Arial, sans-serif" font-size="18" font-weight="800" letter-spacing="0.08em" fill="#0c1f3d">KARYA MITRA</text>
+  <text x="100" y="92" text-anchor="middle" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="600" letter-spacing="0.14em" fill="#64748b">MITRA CETAK TERBAIK ANDA</text>
+</svg>

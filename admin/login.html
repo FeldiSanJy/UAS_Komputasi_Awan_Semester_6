@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin - Karya Mitra Digital Printing</title>
+  <link rel="icon" href="../assets/images/logo-karya-mitra-brand.png?v=24" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-header">
+        <img class="auth-logo" src="../assets/images/logo-karya-mitra-brand.png?v=27" alt="Logo Karya Mitra">
+        <h1 class="auth-title">Karya Mitra</h1>
+        <p class="auth-subtitle">Panel Admin - Silakan masuk ke akun Anda</p>
+      </div>
+
+      <div id="alertContainer"></div>
+
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="username"><i class="fa-solid fa-user"></i> Username</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-user input-icon"></i>
+            <input type="text" id="username" class="form-control" placeholder="Masukkan username" required autocomplete="username">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password"><i class="fa-solid fa-lock"></i> Password</label>
+          <div class="input-wrapper">
+            <i class="fa-solid fa-lock input-icon"></i>
+            <input type="password" id="password" class="form-control" placeholder="Masukkan password" required autocomplete="current-password">
+            <button type="button" class="password-toggle-btn" id="togglePassword" aria-label="Tampilkan password">
+              <i class="fa-solid fa-eye"></i>
+            </button>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center; margin-top: 16px; padding: 12px; font-weight: 600;">
+          Masuk <i class="fa-solid fa-right-to-bracket" style="margin-left: 8px;"></i>
+        </button>
+      </form>
+
+      <div class="auth-footer">
+        Belum punya akun? <a href="register.html">Daftar Sekarang</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/admin.js"></script>
+  <script>
+    // Local page check to see if already logged in
+    document.addEventListener('DOMContentLoaded', () => {
+      if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+        window.location.href = 'index.html';
+      }
+
+      // Password toggle logic
+      const togglePassword = document.getElementById('togglePassword');
+      const passwordInput = document.getElementById('password');
+      if (togglePassword && passwordInput) {
+        togglePassword.addEventListener('click', () => {
+          const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+          passwordInput.setAttribute('type', type);
+          const icon = togglePassword.querySelector('i');
+          icon.classList.toggle('fa-eye');
+          icon.classList.toggle('fa-eye-slash');
+        });
+      }
+    });
+  </script>
+</body>
+</html>
